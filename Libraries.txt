@@ -1,4 +1,0 @@
-Pygame
-Time
-Random
-Typing

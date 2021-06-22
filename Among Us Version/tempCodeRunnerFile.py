@@ -1,0 +1,1 @@
+		display_surface.blit(ending_image,(0,0))

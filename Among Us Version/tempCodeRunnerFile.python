@@ -1,0 +1,8 @@
+import maze
+import MazeMaps
+
+
+m=MazeMaps.mapit()
+n=len(m)
+for i in maze.printPath(m,n):
+	print(i)
