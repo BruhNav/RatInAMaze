@@ -1,7 +1,9 @@
 
 from typing import List
- 
-MAX = 5
+
+import MazeMaps
+
+MAX = 10
  # Function returns true if the
 # move taken is valid else
 # it will return false.
@@ -98,11 +100,7 @@ def printPath(m: List[List[int]], n: int) -> None:
 
 if __name__ == "__main__":
      
-    m = [ [ 1, 0, 0, 0, 0 ],
-          [ 1, 1, 1, 1, 1 ],
-          [ 1, 1, 1, 0, 1 ],
-          [ 0, 0, 0, 0, 1 ],
-          [ 0, 0, 0, 0, 1 ] ]
+    m = MazeMaps.mapit()
     n = len(m)
      
     printPath(m, n)
