@@ -2,27 +2,33 @@
 import pygame
 import random
 import time
-# activate the pygame library .
-# initiate pygame and give permission
-# to use pygame's functionality.
+import maze
+import MazeMaps
+import BlockageDetector
+
+m = MazeMaps.mapit()
+n = len(m)
+
+
+navigator = maze.printPath(m,n)
+
+
+
 pygame.init()
 white = (255, 255, 255)
 
-X = 600
-Y = 600
+X = 500
+Y = 500 
 
 display_surface = pygame.display.set_mode((X, Y ))
 
 pygame.display.set_caption('rat in a maze')
 
-bkgr_image = pygame.image.load(r'D:\demo\pyprograms\GUIwork\576.jpg')
+bkgr_image = pygame.image.load(r'C:\Users\Pranav\Desktop\ITW Backup\Backgrounds\RockyBackground.jpg')
 
-blockage1= pygame.image.load(r'D:\demo\pyprograms\GUIwork\rock.png')
-blockage2= pygame.image.load(r'D:\demo\pyprograms\GUIwork\rock2.png')
-blockage3= pygame.image.load(r'D:\demo\pyprograms\GUIwork\rock3.png')
+blockage1= pygame.image.load(r'C:\Users\Pranav\Desktop\ITW Backup\Icons\grass blockage.jpg')
 
-blockages=[blockage1,blockage2,blockage3]
-character = pygame.image.load(r'D:\demo\pyprograms\GUIwork\character.png')
+character = pygame.image.load(r'C:\Users\Pranav\Desktop\ITW Backup\Icons\character.png')
 
 while True :
 
@@ -33,12 +39,9 @@ while True :
 	# (0, 0) coordinate.
 	display_surface.blit(bkgr_image, (0, 0))
 
-	for i in range(60):
-		randomobsticle=random.choice(blockages)
-		display_surface.blit(bkgr_image,(0,0))
-		display_surface.blit(character,(i*5,0))
-		pygame.display.update()
-		pygame.time.delay(100)
+	for i in BlockageDetector.blockagepoints(m):
+		display_surface.blit(blockage1,i)
+		
 
 
 	# iterate over the list of Event objects
@@ -59,3 +62,10 @@ while True :
 		# Draws the surface object to the screen.
 		pygame.display.update()
 			
+
+
+#for i in range(60):
+# 		display_surface.blit(bkgr_image,(0,0))
+# 		display_surface.blit(character,(i*5,0))
+# 		pygame.display.update()
+# 		pygame.time.delay(100)

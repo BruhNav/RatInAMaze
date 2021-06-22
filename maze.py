@@ -95,13 +95,9 @@ def printPath(m: List[List[int]], n: int) -> None:
  
     # Print all possible paths
     for i in range(len(possiblePaths)):
-        print(possiblePaths[i], end = " ")
+        return possiblePaths[i]
  
+# for i in range(len(possiblePaths)):
+#         print(possiblePaths[i], end = " ")
 
-if __name__ == "__main__":
-     
-    m = MazeMaps.mapit()
-    n = len(m)
-     
-    printPath(m, n)
  
