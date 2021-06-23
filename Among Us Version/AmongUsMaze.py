@@ -2,7 +2,7 @@
 import pygame
 import random
 import time
-import maze
+import SolveMaze
 import MazeMaps
 import BlockageDetector
 
@@ -10,7 +10,7 @@ m = MazeMaps.mapit()
 n = len(m)
 
 
-navigator = maze.printPath(m,n)
+navigator = SolveMaze.printPath(m,n)
 
 
 
