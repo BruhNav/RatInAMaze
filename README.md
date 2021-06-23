@@ -13,7 +13,7 @@ its funcion is called.
 SolveMaze module:(Using Backtracking Algorithm)
 finds the optimal path to reach the end of the
 maze given by MazeMaps and gives the string 
-output of direction asL for left R for right 
+output of direction as L for left R for right 
 U for up and D for down
 
 BlockageFinder: module finds all the places the
