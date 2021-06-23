@@ -24,13 +24,13 @@ display_surface = pygame.display.set_mode((X, Y ))
 
 pygame.display.set_caption('Rat In A Maze')
 
-bkgr_image = pygame.image.load(r'Backgrounds\RockyBackground.jpg')
+bkgr_image = pygame.image.load(r'RatInAMaze\Normal Version\Backgrounds\RockyBackground.jpg')
 
-blockage1= pygame.image.load(r'Icons\grass blockage.jpg')
+blockage1= pygame.image.load(r'RatInAMaze\Normal Version\Icons\grass blockage.jpg')
 
-character = pygame.image.load(r'Icons\character.png')
+character = pygame.image.load(r'RatInAMaze\Normal Version\Icons\character.png')
 
-gameIcon=pygame.image.load(r'Icons\Icon.png')
+gameIcon=pygame.image.load(r'RatInAMaze\Normal Version\Icons\Icon.png')
 
 pygame.display.set_icon(gameIcon)
 
