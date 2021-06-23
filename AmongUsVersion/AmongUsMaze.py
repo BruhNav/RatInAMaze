@@ -24,15 +24,15 @@ display_surface = pygame.display.set_mode((X, Y ))
 
 pygame.display.set_caption('Call The Meeting')
 
-bkgr_image = pygame.image.load(r'RatInAMaze\Among Us Version\Backgrounds\background.png')
+bkgr_image = pygame.image.load(r'AmongUsVersion\Backgrounds\background.png')
 
-blockage1= pygame.image.load(r'RatInAMaze\Among Us Version\Icons\blockage.png')
+blockage1= pygame.image.load(r'AmongUsVersion\Icons\blockage.png')
 
-character = pygame.image.load(r'RatInAMaze\Among Us Version\Icons\character.png')
+character = pygame.image.load(r'AmongUsVersion\Icons\character.png')
 
-gameIcon=pygame.image.load(r'RatInAMaze\Among Us Version\Icons\character.png')
+gameIcon=pygame.image.load(r'AmongUsVersion\Icons\character.png')
 
-ending_image=pygame.image.load(r'RatInAMaze\Among Us Version\Backgrounds\ending.png')
+ending_image=pygame.image.load(r'AmongUsVersion\Backgrounds\ending.png')
 
 pygame.display.set_icon(gameIcon)
 
