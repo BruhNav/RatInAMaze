@@ -22,9 +22,16 @@ by the MazeMaps module
 
 
 Rat In A Maze(or AmongUs Maze): the main file
-which imports all this modules and creates gui
-of the situation using Pygame library 
-
+imports all the modules first MazeMaps gives
+a random maze to the the program then SolveMaze
+outputs the optimal path to reach the end of 
+the maze in the form of string then the main
+Rat In A Maze file itrates over the string 
+and moves the character using pygame library 
+one by one while the blockage detector give 
+the coordinates of the point where the 
+character cannot move and program places
+a blockage image on those coordinates
 
 
 
